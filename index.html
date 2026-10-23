@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141516" />
+    <meta
+      name="description"
+      content="Meet Azeez Adigun, a Brock University student exploring health, technology, AI, gaming, and finance. Academic work, personal projects, and a curiosity beyond the classroom."
+    />
+    <meta
+      property="og:title"
+      content="Azeez Adigun — Curious beyond the classroom"
+    />
+    <meta
+      property="og:description"
+      content="A Brock University student with a background in health and social sciences, an interest in technology, and a few different worlds to explore."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Azeez Adigun — Curious beyond the classroom</title>
+    <script>
+      try {
+        const theme = localStorage.getItem("azeez-theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch {
+        /* Default to dark when browser storage is unavailable. */
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
