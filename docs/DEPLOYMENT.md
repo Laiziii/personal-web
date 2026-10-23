@@ -2,7 +2,7 @@
 
 Azeez approved public deployment in chat. The website is configured for GitHub Pages in `Laiziii/personal-web`.
 
-The workflow in `.github/workflows/pages.yml` builds the locked dependencies with Node.js 24, uploads `dist/`, and deploys through GitHub's official Pages actions. Actions are pinned to verified release commits. Pushes to `main` and manual workflow runs trigger deployment.
+The workflow in `.github/workflows/pages.yml` builds the locked dependencies with Node.js 24, uploads `dist/`, and deploys through GitHub's official Pages actions. It then checks the public homepage and bundled script, stylesheet, and favicon. Actions are pinned to verified release commits. Pushes to `main` and manual workflow runs trigger deployment.
 
 ## One-time hosting configuration
 
@@ -18,4 +18,4 @@ The expected project URL is `https://laiziii.github.io/personal-web/`. Treat it 
 npm run test:e2e
 ```
 
-This runs the production build and 14 browser checks. Also verify that the built site loads from `/personal-web/`, including fonts, JavaScript, styles, and the favicon. Public deployment requires `api.github.com` for GitHub Pages configuration and workflow status, and `laiziii.github.io` for public verification, when those hosts are restricted by the cloud network policy.
+This runs the production build and 14 browser checks. The built site has also been verified from `/personal-web/`, including fonts, JavaScript, styles, and the favicon. `scripts/verify_deployment.py` checks the published files from the deployment runner. Direct GitHub API access is blocked in the current cloud network policy; if that remains the case, enable Pages through the repository settings. Public workflow state is readable through GitHub's website.
