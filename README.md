@@ -1,43 +1,40 @@
-# Azeez Adigun — personal website
+# Azeez Adigun: personal website
 
-A personal space for a Brock University student with interests in health, technology, AI, gaming, finance, and learning. Built with React and Vite, with dark and light appearances, locally bundled fonts, and no backend or credentials.
+A static site written in plain HTML, CSS and JavaScript. No framework and no build step.
 
-## Development
+## Files
 
-Use Node.js 22.12+ (validated with Node.js 24).
-
-```sh
-npm ci
-npm run dev
+```
+index.html         all page content (edit text here)
+css/styles.css     design tokens at the top, then styles section by section
+js/main.js         SITE_CONFIG (your links) + theme, menu, animations, GitHub repos
+assets/favicon.svg tab icon
+serve.js           local preview server (node serve.js -> http://localhost:5173)
 ```
 
-The development server uses port 5173. For production validation:
+## Before going live: fill in the placeholders
 
-```sh
-npm run build
-npm run preview
-```
+Open `js/main.js` and edit `SITE_CONFIG` at the top:
 
-`dist/` is the static output. No SPA route rewrites are needed for section anchors. Azeez approved public deployment; [deployment notes](docs/DEPLOYMENT.md) describe the GitHub Pages workflow and one-time hosting configuration.
+| Field            | What to put                                  | If left empty                    |
+|------------------|----------------------------------------------|----------------------------------|
+| `email`          | The address you want public                  | Shows "Coming soon", not clickable |
+| `githubUsername` | Just your username, e.g. `azeezadigun`       | Projects shows "Nothing public here yet" |
+| `linkedinUrl`    | Full profile URL                             | Shows "Coming soon"              |
 
-## Validation
+Once `githubUsername` is set, the site pulls your public, non-fork repos from GitHub
+(name, description, language, last updated) and links to them. Add a description to each repo
+on GitHub so it shows up nicely.
 
-```sh
-npm run test:e2e
-```
+## Editing
 
-Playwright starts its own production server on port 4175. It tests interest panels and keyboard controls, academic disclosures, mobile navigation, theme persistence, blocked browser storage, clipboard success and failure, responsive layout, and automated accessibility scans in both themes. It uses `/usr/bin/chromium` when available. Else run `npx playwright install chromium` or set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to a browser executable.
+- **Change colours:** edit the variables under `:root` (dark) and `:root[data-theme="light"]` in `css/styles.css`.
+- **Add a project:** copy an `<article class="project">` block in the Projects section of `index.html`.
+- **Add an interest:** copy a `<details class="index-item">` block and renumber.
+- **Hero rotating words:** edit `data-words` on the `.rotator-word` element (separate with `|`).
 
-Automated accessibility checks complement manual keyboard and visual review; they do not establish complete accessibility conformance.
+## Deploying
 
-## Content and structure
-
-- `src/profile.js`: approved public identity and contact details. The optional email remains empty; the website uses the approved GitHub profile.
-- `src/content.js`: interests, verified repository summaries, academic projects, and strengths.
-- `src/components/`: shared header, icons, and decorative interest map.
-- `src/sections/`: interactive interests, projects, and contact sections.
-- `src/main.jsx`: page composition, introduction, education, and current learning.
-- `src/styles.css`: responsive layout and theme variables.
-- `docs/CONTENT.md`: project sources and editorial boundaries.
-
-Appearance preference is saved in localStorage. Fonts and illustrations load locally; no analytics, third-party embeds, contact form, or tracking services are included. Browser storage is optional, and clipboard failures offer a manual copy path.
+Every push to `main` publishes the site with GitHub Pages
+(`.github/workflows/pages.yml`). Only `index.html`, `css/`, `js/` and `assets/` are published;
+`serve.js` is just for local preview.

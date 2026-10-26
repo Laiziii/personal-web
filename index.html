@@ -1,38 +1,508 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#141516" />
-    <meta
-      name="description"
-      content="Meet Azeez Adigun, a Brock University student exploring health, technology, AI, gaming, and finance. Academic work, personal projects, and a curiosity beyond the classroom."
-    />
-    <meta
-      property="og:title"
-      content="Azeez Adigun — Curious beyond the classroom"
-    />
-    <meta
-      property="og:description"
-      content="A Brock University student with a background in health and social sciences, an interest in technology, and a few different worlds to explore."
-    />
-    <meta property="og:type" content="website" />
-    <meta name="color-scheme" content="dark light" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Azeez Adigun — Curious beyond the classroom</title>
-    <script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azeez Adigun</title>
+  <meta name="description" content="Azeez Adigun is a Brock University student with a background in health and social sciences, and interests in technology, AI, finance, gaming and learning new things.">
+  <meta name="theme-color" content="#0d0d0c">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    (function () {
+      document.documentElement.classList.add('js');
       try {
-        const theme = localStorage.getItem("azeez-theme");
-        if (theme === "light" || theme === "dark") {
-          document.documentElement.dataset.theme = theme;
-        }
-      } catch {
-        /* Default to dark when browser storage is unavailable. */
-      }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Icon sprite: reuse with <svg><use href="#icon-name"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="icon-email" viewBox="0 0 24 24">
+      <rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.064 2.064 0 1 1 0-4.128 2.064 2.064 0 0 1 0 4.128zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <circle cx="17.6" cy="6.4" r="1.25" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Azeez Adigun, back to top">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">Azeez Adigun</span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#exploring">Exploring</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Switch to light mode" data-theme-toggle>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Student at Brock University &middot; St. Catharines, ON</p>
+          <h1 class="hero-title reveal">Hey, I&rsquo;m <em>Azeez.</em></h1>
+          <p class="hero-lead reveal">
+            I&rsquo;m a Brock University student with a background in health and social sciences,
+            and a curiosity that doesn&rsquo;t stay in the classroom. I&rsquo;m into public health,
+            technology, AI, finance, gaming, and pretty much anything that makes me want to look something up.
+          </p>
+          <p class="hero-rotator reveal" aria-live="off">
+            <span class="rotator-label">Lately I&rsquo;ve been reading about</span>
+            <span class="rotator-word" data-rotator
+                  data-words="epidemiology|graphics cards|AI assistants|research methods|how the stock market works|story-driven games|health equity|frame rates and input lag">epidemiology</span>
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#interests">See what I&rsquo;m into</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="profile reveal" aria-label="Quick profile">
+          <div class="profile-head">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="mono">profile.txt</span>
+          </div>
+          <dl class="profile-list">
+            <div><dt>Name</dt><dd>Azeez Abidemi Adigun</dd></div>
+            <div><dt>Based in</dt><dd>St. Catharines, Ontario</dd></div>
+            <div><dt>Studying at</dt><dd>Brock University, since 2023</dd></div>
+            <div><dt>Background</dt><dd>Public health, health &amp; social sciences</dd></div>
+            <div><dt>Into</dt><dd>Tech, AI, finance, games, how things work</dd></div>
+            <div><dt>Status</dt><dd><span class="status-pill">Still learning</span></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <div class="container">
+        <p class="tagline reveal">Lots of interests. One habit: figuring out how things work.</p>
+      </div>
+    </section>
+
+    <!-- ============ About + Education ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">01</span>
+          <h2 class="section-title" id="about-title">About me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="lead">
+              I started at Brock in September 2023 in Public Health. Since then my studies have moved
+              through health sciences and the social sciences more broadly, but public health is still
+              the thing I keep coming back to.
+            </p>
+            <p>
+              What gets me is the bigger picture: why some communities are healthier than others, how
+              the places we live and the lives we lead shape our health, and what actually works to
+              prevent disease before it starts.
+            </p>
+            <p>
+              Outside of class I&rsquo;m usually doing something on a computer. Tweaking my PC, trying a new
+              AI tool, playing Fortnite, or reading way too much about the stock market. Those interests
+              look unrelated, but most of them come back to the same question: how does this work, and
+              could it work better?
+            </p>
+            <p>
+              I&rsquo;m still figuring out exactly where all of this leads, and I&rsquo;m fine with that.
+              This site is a snapshot of where I am right now. It&rsquo;ll change as I do.
+            </p>
+          </div>
+
+          <aside class="edu-card reveal" aria-labelledby="edu-title">
+            <p class="card-kicker mono">Education</p>
+            <h3 class="edu-school" id="edu-title">Brock University</h3>
+            <p class="edu-meta">St. Catharines, Ontario &middot; September 2023 to present</p>
+            <dl class="edu-list">
+              <div><dt>Areas of study</dt><dd>Public Health, Health Sciences, Social Sciences</dd></div>
+              <div><dt>Status</dt><dd>Current undergraduate student</dd></div>
+            </dl>
+            <p class="card-kicker mono">Academic interests</p>
+            <ul class="tags" aria-label="Academic interests">
+              <li>Epidemiology</li>
+              <li>Population health</li>
+              <li>Health equity</li>
+              <li>Social determinants of health</li>
+              <li>Chronic disease prevention</li>
+              <li>Health promotion</li>
+              <li>Research methods</li>
+              <li>Health data &amp; statistics</li>
+              <li>Community outreach</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Interests ============ -->
+    <section class="section" id="interests" aria-labelledby="interests-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">02</span>
+          <h2 class="section-title" id="interests-title">Things I&rsquo;m into</h2>
+          <p class="section-sub">Not a list of things I&rsquo;m an expert in. Just the stuff I keep coming back to. Open any of them for more.</p>
+        </header>
+
+        <div class="index-list">
+          <details class="index-item reveal" open>
+            <summary>
+              <span class="index-num mono">01</span>
+              <span class="index-title">Public health</span>
+              <span class="index-hint">Health in the context of people&rsquo;s lives</span>
+              <span class="index-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="index-body">
+              <p>
+                I&rsquo;m interested in how income, environment, community and daily habits shape
+                health. Epidemiology, chronic disease prevention and health equity are the areas I read
+                about most, along with how research actually gets designed and tested.
+              </p>
+              <ul class="tags">
+                <li>Epidemiology</li><li>Disease prevention</li><li>Health equity</li><li>Health data</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="index-item reveal">
+            <summary>
+              <span class="index-num mono">02</span>
+              <span class="index-title">Computers &amp; hardware</span>
+              <span class="index-hint">I like knowing what&rsquo;s inside the machine</span>
+              <span class="index-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="index-body">
+              <p>
+                PC hardware, building and customizing, and squeezing more performance out of a setup.
+                I like understanding why a CPU, GPU or RAM upgrade makes a difference, not just that it does.
+              </p>
+              <div class="spec" aria-label="My current setup">
+                <p class="spec-title mono">Current setup</p>
+                <dl>
+                  <div><dt>CPU</dt><dd>AMD Ryzen 7 5700X</dd></div>
+                  <div><dt>GPU</dt><dd>NVIDIA RTX 5060</dd></div>
+                  <div><dt>RAM</dt><dd>32 GB</dd></div>
+                  <div><dt>Console</dt><dd>PlayStation 5</dd></div>
+                </dl>
+              </div>
+            </div>
+          </details>
+
+          <details class="index-item reveal">
+            <summary>
+              <span class="index-num mono">03</span>
+              <span class="index-title">Artificial intelligence</span>
+              <span class="index-hint">Learning by trying things</span>
+              <span class="index-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="index-body">
+              <p>
+                I&rsquo;d rather test an AI tool than just read about it. I use tools like ChatGPT and Codex to
+                work through ideas, learn faster and build things I couldn&rsquo;t build on my own yet.
+                I&rsquo;m especially curious about how AI is changing the way people study, work and create.
+                This website is one of those experiments.
+              </p>
+              <ul class="tags">
+                <li>Generative AI</li><li>AI assistants</li><li>AI-assisted building</li><li>Automation</li><li>AI in education</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="index-item reveal">
+            <summary>
+              <span class="index-num mono">04</span>
+              <span class="index-title">Gaming</span>
+              <span class="index-hint">PC and PlayStation</span>
+              <span class="index-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="index-body">
+              <p>
+                A hobby, not a career plan, and a big part of why I care about hardware. I like competitive
+                games where settings and frame rates matter, and story games that stay with you afterwards.
+              </p>
+              <ul class="game-list">
+                <li><span class="game-name">Fortnite</span><span class="game-note">Competitive play, settings, high frame rates</span></li>
+                <li><span class="game-name">Apex Legends</span><span class="game-note">Loba has been a favourite</span></li>
+                <li><span class="game-name">Red Dead Redemption 2</span><span class="game-note">The world and the storytelling</span></li>
+                <li><span class="game-name">Detroit: Become Human</span><span class="game-note">Choices, technology and people</span></li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="index-item reveal">
+            <summary>
+              <span class="index-num mono">05</span>
+              <span class="index-title">Finance &amp; business</span>
+              <span class="index-hint">How money actually works</span>
+              <span class="index-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="index-body">
+              <p>
+                Personal finance, investing, markets, economics and entrepreneurship. I&rsquo;m not an
+                expert. I&rsquo;m learning so I can make better decisions, become more financially
+                independent over time, and maybe build something of my own one day.
+              </p>
+              <ul class="tags">
+                <li>Budgeting</li><li>Investing</li><li>Stock market</li><li>Crypto</li><li>Economics</li><li>Entrepreneurship</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="index-item reveal">
+            <summary>
+              <span class="index-num mono">06</span>
+              <span class="index-title">Habits &amp; growth</span>
+              <span class="index-hint">Getting a bit better at things</span>
+              <span class="index-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="index-body">
+              <p>
+                Better habits, clearer communication, more confidence speaking in front of people, and
+                staying active (a lot of that is just walking). Off the clock, I like simple, comfortable
+                clothes: good basics, relaxed fits, a heavyweight hoodie.
+              </p>
+              <ul class="tags">
+                <li>Public speaking</li><li>Productivity</li><li>Fitness</li><li>Independence</li><li>Personal style</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">03</span>
+          <h2 class="section-title" id="projects-title">Projects</h2>
+          <p class="section-sub">A mix of academic work and things I&rsquo;ve built. More to come.</p>
+        </header>
+
+        <div class="projects reveal">
+          <article class="project project-featured">
+            <div class="project-top">
+              <span class="project-type mono">Personal project &middot; 2026</span>
+            </div>
+            <h3 class="project-title">This website</h3>
+            <p>
+              My first personal site, designed and built with the help of AI tools. It&rsquo;s hand-written
+              HTML, CSS and JavaScript with no framework, so I can read and change every part of it.
+              It has a dark and light mode and works on phones.
+            </p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>AI-assisted</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <span class="project-type mono">Academic &middot; Research proposal</span>
+            </div>
+            <h3 class="project-title">Physical activity &amp; type 2 diabetes</h3>
+            <p>
+              A proposal asking whether Ontario adults aged 40&ndash;64 with prediabetes who get less than
+              150 minutes of physical activity a week have a higher five-year incidence of type 2 diabetes
+              than those who meet the guideline.
+            </p>
+            <ul class="tags">
+              <li>Epidemiology</li><li>Research design</li><li>Prevention</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <span class="project-type mono">Academic &middot; GIS</span>
+            </div>
+            <h3 class="project-title">Mapping crime patterns in Toronto</h3>
+            <p>
+              A geographic information systems project looking at how location-based data can help
+              explain where crime happens and what that says about the social issues behind it.
+            </p>
+            <ul class="tags">
+              <li>GIS</li><li>Spatial data</li><li>Social issues</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <div class="project-top">
+              <span class="project-type mono">Academic &middot; Coursework</span>
+            </div>
+            <h3 class="project-title">Community education &amp; digital culture</h3>
+            <p>
+              Coursework on adult education, community outreach, digital media, popular culture and
+              Indigenous knowledge, and how technology shapes the way people learn and express culture.
+            </p>
+            <ul class="tags">
+              <li>Education</li><li>Digital media</li><li>Community</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- GitHub repos are loaded by js/main.js when a username is set in SITE_CONFIG -->
+        <div class="github-block reveal" data-github-block>
+          <div class="github-head">
+            <div>
+              <p class="card-kicker mono">From GitHub</p>
+              <h3 class="github-title">Code I&rsquo;ve put online</h3>
+            </div>
+            <a class="link-arrow" href="#" data-github-link hidden>View profile <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="github-grid" data-github-grid>
+            <p class="github-empty">
+              Nothing public here yet. As I build things and put them on GitHub, they&rsquo;ll show up in this space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Exploring + skills ============ -->
+    <section class="section" id="exploring" aria-labelledby="exploring-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">04</span>
+          <h2 class="section-title" id="exploring-title">What I&rsquo;m exploring</h2>
+          <p class="section-sub">The things I&rsquo;m actively learning right now.</p>
+        </header>
+
+        <ol class="now-list">
+          <li class="reveal">
+            <h3>Building with AI</h3>
+            <p>Going from an idea to something that works with AI as a collaborator. This site is the first real result.</p>
+          </li>
+          <li class="reveal">
+            <h3>How the web works</h3>
+            <p>Learning how HTML, CSS and JavaScript fit together, mostly by reading and changing what I&rsquo;ve built.</p>
+          </li>
+          <li class="reveal">
+            <h3>PC performance</h3>
+            <p>Drivers, in-game settings and hardware tweaks for smoother, more responsive gameplay.</p>
+          </li>
+          <li class="reveal">
+            <h3>Financial literacy</h3>
+            <p>Budgeting, investing basics, and how markets and taxes actually work.</p>
+          </li>
+          <li class="reveal">
+            <h3>Speaking up</h3>
+            <p>Getting more comfortable talking in front of people. I&rsquo;ve looked into Toastmasters as one way to practise.</p>
+          </li>
+          <li class="reveal">
+            <h3>Getting organized</h3>
+            <p>Using Notion, Google Drive and Google Calendar to keep school work in one place.</p>
+          </li>
+        </ol>
+
+        <div class="skills reveal">
+          <div class="skills-col">
+            <h3 class="skills-title">Comfortable with</h3>
+            <ul>
+              <li>Academic research and literature reviews</li>
+              <li>Developing research questions</li>
+              <li>Critical thinking and problem-solving</li>
+              <li>Written communication</li>
+              <li>Collaborating and working independently</li>
+              <li>Time management and adapting quickly</li>
+              <li>Using AI tools day to day</li>
+              <li>Troubleshooting and tuning a PC</li>
+            </ul>
+          </div>
+          <div class="skills-col skills-col-learning">
+            <h3 class="skills-title">Still learning</h3>
+            <ul>
+              <li>Statistics and epidemiological methods</li>
+              <li>Working with health data</li>
+              <li>GIS and spatial analysis</li>
+              <li>Web development</li>
+              <li>Public speaking</li>
+              <li>Investing and economics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-num">05</span>
+          <h2 class="section-title" id="contact-title">Say hi</h2>
+        </header>
+        <div class="contact-grid">
+          <p class="contact-lead reveal">
+            If something here caught your interest, whether it&rsquo;s public health, a project idea,
+            or which GPU to buy, I&rsquo;m happy to hear from you.
+          </p>
+          <!-- Links are filled in from SITE_CONFIG in js/main.js. Empty values show as "coming soon". -->
+          <ul class="contact-links reveal">
+            <li><a class="contact-link" data-contact="email" href="#"><span class="contact-icon" aria-hidden="true"><svg><use href="#icon-email"/></svg></span><span class="contact-value">Coming soon</span><span class="contact-arrow" aria-hidden="true">&rarr;</span></a></li>
+            <li><a class="contact-link" data-contact="github" href="#"><span class="contact-icon" aria-hidden="true"><svg><use href="#icon-github"/></svg></span><span class="contact-value">Coming soon</span><span class="contact-arrow" aria-hidden="true">&rarr;</span></a></li>
+            <li><a class="contact-link" data-contact="linkedin" href="#"><span class="contact-icon" aria-hidden="true"><svg><use href="#icon-linkedin"/></svg></span><span class="contact-value">Coming soon</span><span class="contact-arrow" aria-hidden="true">&rarr;</span></a></li>
+            <li><a class="contact-link" data-contact="instagram" href="#"><span class="contact-icon" aria-hidden="true"><svg><use href="#icon-instagram"/></svg></span><span class="contact-value">Coming soon</span><span class="contact-arrow" aria-hidden="true">&rarr;</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-year>2026</span> Azeez Adigun</p>
+      <p class="muted">Built with curiosity and a little help from AI.</p>
+      <ul class="social" aria-label="Elsewhere">
+        <li><a class="social-link" data-contact="email" href="#"><svg aria-hidden="true"><use href="#icon-email"/></svg></a></li>
+        <li><a class="social-link" data-contact="github" href="#"><svg aria-hidden="true"><use href="#icon-github"/></svg></a></li>
+        <li><a class="social-link" data-contact="linkedin" href="#"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg></a></li>
+        <li><a class="social-link" data-contact="instagram" href="#"><svg aria-hidden="true"><use href="#icon-instagram"/></svg></a></li>
+      </ul>
+      <a class="link-arrow" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
 </html>

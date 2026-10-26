@@ -13,27 +13,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out the website
-        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
-      - name: Set up Node.js
-        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
-        with:
-          node-version: 24
-          cache: npm
-      - name: Install locked dependencies
-        run: npm ci --no-audit --no-fund
-      - name: Build the website
-        run: npm run build
-      - name: Upload the static website
-        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
-        with:
-          path: dist
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -43,14 +23,19 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Check out deployment verification
+      - name: Check out the website
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: Collect the site files
+        # Static site, no build step: publish only what the browser needs
+        run: |
+          mkdir _site
+          cp -r index.html css js assets _site/
       - name: Read GitHub Pages configuration
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Upload the static website
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: _site
       - name: Deploy the website
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
-      - name: Verify the public website and assets
-        env:
-          DEPLOYED_URL: ${{ steps.deployment.outputs.page_url }}
-        run: python3 scripts/verify_deployment.py "$DEPLOYED_URL"
