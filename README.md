@@ -35,6 +35,7 @@ on GitHub so it shows up nicely.
 
 ## Deploying
 
-Every push to `main` publishes the site with GitHub Pages
-(`.github/workflows/pages.yml`). Only `index.html`, `css/`, `js/` and `assets/` are published;
-`serve.js` is just for local preview.
+Live at https://laiziii.github.io/personal-web/
+
+GitHub Pages serves the site straight from the `main` branch, so every push to `main`
+updates it within a minute or two. `serve.js` is just for local preview.
