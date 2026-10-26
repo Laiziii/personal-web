@@ -753,6 +753,21 @@ button { font: inherit; color: inherit; }
 }
 .project-lead { margin: 0; font-size: clamp(1.05rem, 1.6vw, 1.2rem); color: var(--muted); max-width: 40em; }
 
+.project-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  margin-top: 32px;
+}
+.project-stats > div { min-width: 120px; max-width: 220px; }
+.project-stats dt {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+  line-height: 1.1;
+  color: var(--accent);
+}
+.project-stats dd { margin-top: 4px; font-size: .85rem; color: var(--muted); }
+
 .project-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);

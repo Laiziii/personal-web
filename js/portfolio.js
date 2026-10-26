@@ -105,6 +105,17 @@
       el("p", "project-lead", p.summary)
     );
 
+    // Key numbers strip
+    if (p.stats && p.stats.length) {
+      const stats = el("dl", "project-stats");
+      p.stats.forEach(function (s) {
+        const div = el("div");
+        div.append(el("dt", null, s[0]), el("dd", null, s[1]));
+        stats.append(div);
+      });
+      head.append(stats);
+    }
+
     // Body sections
     const body = el("div", "project-body");
     p.sections.forEach(function (s) {
