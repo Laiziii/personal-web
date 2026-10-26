@@ -15,7 +15,7 @@ window.PROJECTS = [
     term: "Fall 2026",
     type: "Presentation",
     format: "Solo",
-    area: "Community & education",
+    area: "Education & society",
     summary: "How an anime villain's backstory changed the way I judge people, and what that says about popular culture as a teacher.",
     tools: ["PowerPoint", "Jubas, Taber & Brown (2015)"],
     pdf: null,
@@ -40,7 +40,7 @@ window.PROJECTS = [
     term: "Fall 2026",
     type: "Critical response",
     format: "Solo",
-    area: "Community & education",
+    area: "Education & society",
     summary: "A critical response to a rural hospice outreach program, asking who it actually reaches and how it knows it's working.",
     tools: ["Community development", "Adult learning theory", "2021 Census"],
     pdf: "files/hospice-palliative-outreach-critical-discourse.pdf",
@@ -67,7 +67,7 @@ window.PROJECTS = [
     term: "Fall 2026",
     type: "Presentation",
     format: "Solo",
-    area: "Community & education",
+    area: "Education & society",
     summary: "An analysis of Bridges Niagara's peer-led vaccine education for newcomers, with recommendations to extend its reach.",
     tools: ["PowerPoint", "Knowles (1980)", "Putnam (2000)"],
     pdf: null,
@@ -96,7 +96,7 @@ window.PROJECTS = [
     term: "Fall 2026",
     type: "Reflection",
     format: "Solo",
-    area: "Community & education",
+    area: "Writing & reflection",
     summary: "A short reflection on four leadership values I want to practise: listening, empathy, self-awareness and collaboration.",
     tools: ["Servant leadership", "Authentic leadership", "Leaderful practice", "Inclusive leadership"],
     pdf: null,
@@ -110,6 +110,29 @@ window.PROJECTS = [
         "Collaboration: leadership can come from people working together, and inclusive teams make room for quieter voices (Raelin, 2011; Roberson & Perry, 2022)."
       ] },
       { heading: "How I'd measure it", text: "Did people understand what was expected, feel comfortable asking questions, and get a fair chance to contribute? Those are things I can pay attention to now." }
+    ]
+  },
+  {
+    id: "epidemiology-biostatistics-assignments",
+    title: "Epidemiology and biostatistics assignments",
+    course: "HLSC 2P07",
+    courseName: null,
+    term: "Fall 2026",
+    type: "Problem sets",
+    format: "Solo",
+    area: "Research",
+    summary: "Weekly work on study design, measures of disease frequency and descriptive statistics, using real health examples.",
+    tools: ["Study design", "Prevalence & incidence", "Descriptive statistics", "Box plots"],
+    pdf: null,
+    privateNote: "The answers aren't posted because the course is still running.",
+    sections: [
+      { heading: "Overview", text: "A set of assignments from a health research course where each week builds a core skill: recognising a study design, calculating how common a condition is, and describing a dataset with numbers and a chart." },
+      { heading: "What I worked through", list: [
+        "Identifying a study design: a scenario following infants who did and didn't receive a medication was a prospective cohort study, and I explained its strengths, like a clear order between exposure and outcome.",
+        "Measures of disease frequency: calculating the prevalence of hypertension at baseline and after two years in a group of 1,250 people.",
+        "Descriptive statistics by hand: mean, sample standard deviation, median and quartiles for a set of cholesterol readings, plus a box plot."
+      ] },
+      { heading: "What I took away", text: "Doing the calculations step by step made the formulas make sense, and it's the groundwork for the research proposal I'm developing on physical activity and type 2 diabetes." }
     ]
   },
   {
@@ -229,6 +252,7 @@ window.PROJECTS = [
       { heading: "What we did", list: [
         "Wrote a creative brief: audience profiles, barriers, benefits, a logic model and outcome targets.",
         "Ran two sessions with a resilience video, group reflection, scenarios, and a personal pledge on CopeCareConnect.ca.",
+        "Planned a short resilience video for the first session and wrote up how it was made.",
         "Sent follow-up emails between sessions to keep people engaged with their pledge.",
         "Designed a questionnaire and evaluated the workshop with 27 participants."
       ] },
@@ -239,6 +263,80 @@ window.PROJECTS = [
         "The weak spot was knowing where to find resources (2.1 out of 4), so we recommended having students explore and bookmark the site during the session."
       ] },
       { heading: "Limitations", text: "Social desirability bias was likely, since students answered right after the workshop, and with no pre-workshop survey we can't be sure the changes came from the workshop itself." }
+    ]
+  },
+  {
+    id: "mindfulness-training-reflection",
+    title: "Mindfulness training: what actually stuck",
+    course: "HLSC 3P25",
+    courseName: "Mental Health & Addictions",
+    term: "Winter 2026",
+    type: "Reflection paper",
+    format: "Solo",
+    area: "Writing & reflection",
+    summary: "An honest look at a mindfulness training I started out sceptical of, and what actually stuck.",
+    tools: ["Mindfulness practice", "Rogers (2016)"],
+    pdf: null,
+    privateNote: "The full reflection isn't shared because it's personal.",
+    sections: [
+      { heading: "Overview", text: "A reflection on the mindfulness training in HLSC 3P25, read alongside The Mindful Twenty-Something (Rogers, 2016). I went in seeing it as something to get through for credit, and came out using some of it every week." },
+      { heading: "What worked and what didn't", list: [
+        "Belly breathing and focusing on the breath helped in stressful moments like presentations and midterms. It didn't make stress disappear, but it took the edge off.",
+        "'Chicken breathing' was oddly effective, mostly because it's funny and lifts my mood.",
+        "Walking meditation felt awkward and I gave up partway. Noticing my own judgment about that was a lesson in itself.",
+        "The 'observing mind' idea was the hardest to connect with, and I said so."
+      ] },
+      { heading: "Connecting it to the course", text: "Mindfulness can help people pause before reacting, which matters for anxiety and addiction, but it isn't a substitute for therapy, medication or proper support. I also pointed out that not everyone has the time or circumstances to practise it, and linked it to a guest lecture on social health and community, including how joining Toastmasters fits in." },
+      { heading: "What I took away", text: "Mindfulness isn't about making everything calm. It's about paying attention to what's happening now instead of worrying about what might go wrong later." }
+    ]
+  },
+  {
+    id: "learning-for-success-journal",
+    title: "Learning journal: how I actually learn",
+    course: "ADED 1P31",
+    courseName: "Learning for Success",
+    term: "Winter 2026",
+    type: "Learning journal",
+    format: "Solo",
+    area: "Writing & reflection",
+    summary: "A What? So What? Now What? journal on study habits, research skills, wellness, career paths and presenting.",
+    tools: ["Reflective writing", "What? So What? Now What?"],
+    pdf: null,
+    privateNote: "The full journal isn't shared because it includes personal details.",
+    sections: [
+      { heading: "Overview", text: "A summative learning journal for a course on learning strategies. Each entry answers a directed question using a What? So What? Now What? structure, connecting the course material to my own habits." },
+      { heading: "Topics I reflected on", list: [
+        "Note-taking: realising that typing everything on my laptop was mostly passive learning, and switching to rewriting ideas in my own words and spaced repetition.",
+        "Research: using sharper keywords in Omni and mining reference lists instead of starting from scratch.",
+        "Wellness: mapping my habits onto the eight dimensions of wellness and setting a goal for occupational wellness.",
+        "Career paths: planned happenstance and chaos theory, and seeing a change of direction as part of the process.",
+        "Presentations: practising alone, with a test audience and on video, and joining Toastmasters."
+      ] },
+      { heading: "What I took away", text: "The biggest change was self-awareness: understanding how I learn, what wasn't working, and what to do about it." }
+    ]
+  },
+  {
+    id: "grievance-system-workplace-democracy",
+    title: "Is the grievance system the key to workplace democracy?",
+    course: "LABR 1P95",
+    courseName: null,
+    term: "Winter 2026",
+    type: "Video forum presentation",
+    format: "Solo",
+    area: "Education & society",
+    summary: "A video forum argument that grievance procedures matter, but strikes, bargaining and organizing do more to democratize work.",
+    tools: ["PowerPoint", "Ross & Savage, Building a Better World"],
+    pdf: null,
+    privateNote: "The slides aren't posted yet. A PDF version is coming soon.",
+    sections: [
+      { heading: "My position", text: "Disagree: the grievance system is not the most important tool for workplace democracy. It's useful, but it's one small piece." },
+      { heading: "The argument", list: [
+        "Grievances are reactive. They only respond after an employer has already broken the agreement.",
+        "They replaced faster, more powerful tools like walkouts, which put immediate pressure on employers.",
+        "They're bureaucratic, moving power from workers to lawyers, arbitrators and HR, which can make members passive.",
+        "Strikes, collective bargaining, political action, rank-and-file organizing and equity committees do more to give workers a real voice."
+      ] },
+      { heading: "What I took away", text: "How to build a clear position from a textbook and lecture material, and present it in a short, structured video format." }
     ]
   },
   {
@@ -275,7 +373,7 @@ window.PROJECTS = [
   {
     id: "toronto-income-crime-gis",
     title: "Neighbourhood income and crime density in Toronto",
-    course: "HLSC 3Q20",
+    course: "HLSC 3Q90",
     courseName: null,
     term: "Fall 2025",
     type: "GIS research report",
@@ -297,6 +395,53 @@ window.PROJECTS = [
         "The two maps didn't match: the lowest-income neighbourhoods didn't have the highest crime density, which points to factors like population density, commercial activity and transit."
       ] },
       { heading: "Limitations", text: "A cross-sectional, neighbourhood-level design can't show cause and effect (the ecological fallacy). Income and crime data came from different years, and only reported crimes are counted." }
+    ]
+  },
+  {
+    id: "gis-postal-codes-greenspace",
+    title: "GIS lab: postal codes, distances and greenspace buffers",
+    course: "HLSC 3Q90",
+    courseName: null,
+    term: "Fall 2025",
+    type: "GIS assignment",
+    format: "Solo",
+    area: "Research",
+    summary: "Mapped postal code locations across Toronto, measured distances and used buffers to compare access to greenspace.",
+    tools: ["ArcGIS Pro", "Buffers", "Forward sortation areas"],
+    pdf: "files/gis-postal-codes-greenspace.pdf",
+    sections: [
+      { heading: "Overview", text: "A hands-on GIS assignment working with point data for Toronto postal codes, and thinking about how the size of a buffer changes what counts as someone's 'neighbourhood'." },
+      { heading: "What I did", list: [
+        "Mapped 416 postal codes and found that most locations clustered in East York around Danforth Avenue.",
+        "Counted 312 locations inside the M4C forward sortation area.",
+        "Measured the distance from a postal code to a target location (about 2.97 km).",
+        "Drew 500 m and 1 km buffers around each location and compared how much greenspace each captured."
+      ] },
+      { heading: "My call", text: "For a study on greenspace and physical activity, I'd use the 1 km buffer. The 500 m buffer around one location captured almost no parks, while 1 km included Downsview Park, which is a realistic walk away." }
+    ]
+  },
+  {
+    id: "video-games-benefits-essay",
+    title: "Playing video games and their benefits",
+    course: "ADED 1P33",
+    courseName: "Scholarly Writing for Adult Learners",
+    term: "Fall 2025",
+    type: "Argumentative essay",
+    format: "Solo",
+    area: "Writing & reflection",
+    summary: "An argumentative essay making the research-backed case that gaming in moderation builds mental, social and practical skills.",
+    tools: ["Thesis & outline", "APA style", "Literature"],
+    pdf: "files/video-games-benefits-essay.pdf",
+    sections: [
+      { heading: "Thesis", text: "Gaming isn't a harmful distraction when it's done responsibly. In moderation, it improves mental skills, supports emotional wellbeing and builds social connection through teamwork and communication." },
+      { heading: "The argument", list: [
+        "Cognitive benefits: action and puzzle games train attention, memory, problem-solving and fast decision-making (Bediou et al., 2018).",
+        "Social benefits: multiplayer games like Fortnite and Minecraft build teamwork and real friendships and can reduce loneliness (Cole & Griffiths, 2007).",
+        "Learning: gamification and tools like Minecraft Education make learning more engaging (Connolly et al., 2012).",
+        "Myths: the problem is excessive play, not gaming itself (Granic et al., 2014)."
+      ] },
+      { heading: "How I built it", text: "I started with a thesis statement and a section-by-section outline with a source for each point, then turned that into the full essay." },
+      { heading: "What I took away", text: "Writing about something I actually care about made it easier to practise structuring an argument and backing each claim with evidence." }
     ]
   }
 ];
