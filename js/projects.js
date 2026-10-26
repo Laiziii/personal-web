@@ -138,25 +138,25 @@ window.PROJECTS = [
   {
     id: "t2d-physical-activity-proposal",
     title: "Physical activity and type 2 diabetes prevention",
-    course: null,
-    courseName: null,
-    term: "2026",
+    course: "HLSC 4P50",
+    courseName: "Research Methods in Epidemiology",
+    term: "Fall 2026",
     type: "Research proposal",
     format: "Solo",
     area: "Research",
     summary: "A proposal asking whether adults with prediabetes who miss the 150-minute activity guideline are more likely to develop type 2 diabetes.",
-    tools: ["Epidemiology", "Research design"],
+    tools: ["Epidemiology", "Research design", "Literature review"],
     pdf: null,
     privateNote: "This proposal is still a work in progress, so the full text isn't shared yet.",
     sections: [
-      { heading: "Research question", text: "Among Ontario adults aged 40–64 with prediabetes, do those who don't meet the recommended 150 minutes of physical activity per week have a higher five-year incidence of type 2 diabetes than those who do?" },
-      { heading: "Why it matters", text: "Prediabetes is a window where type 2 diabetes can still be prevented. Physical activity is one of the most practical things people can change, so knowing how much the guideline matters for this group could help target prevention." },
-      { heading: "The pieces of the question", list: [
-        "Population: Ontario adults aged 40–64 with prediabetes.",
-        "Exposure: not meeting 150 minutes of physical activity per week.",
-        "Comparison: adults who meet the guideline.",
-        "Outcome: new type 2 diabetes diagnoses over five years."
-      ] }
+      { heading: "Research question", text: "Among adults with prediabetes in Ontario, is getting less than 150 minutes of physical activity per week associated with a higher risk of developing type 2 diabetes over five years, compared with getting at least 150 minutes?" },
+      { heading: "Why it matters", text: "Prediabetes is becoming more common in Ontario, rising from 11% to 14% of adults between 2015 and 2024. It's also a window where type 2 diabetes can still be prevented, and physical activity is one of the most practical things people can change." },
+      { heading: "What the evidence shows", list: [
+        "In the Diabetes Prevention Program trial, a lifestyle intervention cut diabetes incidence by 58%, but it combined activity, diet and weight loss, so activity's own effect is unclear.",
+        "Cohort studies in Spain and China link low activity to progression, but they used different populations and different ways of measuring activity.",
+        "A 2025 meta-analysis of 59 cohort studies found that inactivity raised the odds of progression and moderate activity lowered them."
+      ] },
+      { heading: "The gap I'm addressing", text: "No Ontario study has looked at whether meeting the 150-minute guideline itself is linked to progression. Using that clear threshold makes the findings easy to interpret and connects them directly to Diabetes Canada's recommendations." }
     ]
   },
   {
@@ -340,20 +340,78 @@ window.PROJECTS = [
     ]
   },
   {
+    id: "phubbing-observation-study",
+    title: "Phubbing: an observation study of students and their phones",
+    course: "HLSC 3Q20",
+    courseName: null,
+    term: "Fall 2025",
+    type: "Observational study",
+    format: "Solo",
+    area: "Research",
+    summary: "Watched three groups of students on campus to measure how often people ignore friends for their phones, and how the group reacts.",
+    tools: ["Structured observation", "Rating scale", "Field data"],
+    pdf: null,
+    privateNote: "Summary only. The full report isn't posted.",
+    sections: [
+      { heading: "Research focus", text: "'Phubbing' means ignoring the people you're with in favour of your phone. I set out to count how often it happens in real student groups, how long it lasts, and how friends respond." },
+      { heading: "Method", list: [
+        "Three 10-minute observations of groups of 4–5 students in the library, the Hungry Badger and the Market food court.",
+        "Timed each phone episode and rated disengagement on a 0–4 scale, from a quick glance while still talking to completely silent on the phone.",
+        "Recorded how the rest of the group reacted: kept talking to the phubber, carried on without them, or pulled out their own phones."
+      ] },
+      { heading: "Findings", list: [
+        "10 episodes in 30 minutes, about one every three minutes, adding up to 4.5 minutes of phone time.",
+        "Most episodes rated 1–3. One reached 4, with the person fully disconnected.",
+        "Every group reacted the same way: people kept talking, but at least one other person picked up their phone too, which suggests phubbing is normalised and spreads."
+      ] },
+      { heading: "Strengths and limits", text: "The 0–4 scale captured how disruptive each episode was, not just whether it happened. On the other hand, I couldn't see what people were doing on their phones, and three groups can't represent all students." }
+    ]
+  },
+  {
+    id: "copecareconnect-pledge-reflection",
+    title: "My CopeCareConnect pledge: going outside every day",
+    course: "HLSC 3Q20",
+    courseName: null,
+    term: "Fall 2025",
+    type: "Reflection",
+    format: "Solo",
+    area: "Writing & reflection",
+    summary: "Kept a two-week resilience pledge to get outside every day, and analysed it using Social Cognitive Theory.",
+    tools: ["Social Cognitive Theory", "Behaviour change"],
+    pdf: null,
+    privateNote: "Summary only. The full reflection isn't posted.",
+    sections: [
+      { heading: "The pledge", text: "For two weeks I committed to going outside every day to cut screen time, get fresh air and walk. A few months later, I helped run a CopeCareConnect workshop myself." },
+      { heading: "Through the theory", list: [
+        "Expectations: I expected it to clear my head and help me feel calmer, which motivated me to do it.",
+        "Behavioural capability: I already knew safe routes and how to dress for the weather.",
+        "Self-efficacy: it was small enough that I was confident I could stick with it.",
+        "Reinforcement: I rewarded myself with games or a movie after each walk, which kept me consistent."
+      ] },
+      { heading: "What I took away", text: "Small daily actions really did change my mood and energy. When I missed a day, I just picked it back up the next day. That's resilience in practice, and it's also reciprocal determinism: behaviour, mindset and environment feeding each other." }
+    ]
+  },
+  {
     id: "work-life-school-balance-interview",
     title: "Balancing work, school and life: a qualitative interview",
     course: "HLSC 3P37",
     courseName: "Qualitative Research in Health Sciences",
     term: "Fall 2025",
     type: "Qualitative research",
-    format: "Solo",
+    format: "Pair project",
     area: "Research",
-    summary: "Designed and ran a semi-structured interview with a university student about juggling school, part-time work and personal life.",
-    tools: ["Interview guide", "Transcription", "Field notes"],
+    summary: "A term-long qualitative project on how students balance school, work and life, from research proposal to interview to presenting findings.",
+    tools: ["Phenomenology", "Interview guide", "Transcription", "Field notes"],
     pdf: null,
     privateNote: "The transcript isn't shared to protect the participant's privacy.",
     sections: [
-      { heading: "Overview", text: "A qualitative research assignment where I built an interview guide with main and follow-up questions, then interviewed a fourth-year student (under a pseudonym) about balancing school, work and personal life." },
+      { heading: "Overview", text: "A term-long qualitative research project with a partner. We started with a proposal for a phenomenological study of work-life balance and mental health among Canadian undergraduates. Then we each interviewed a student, and we presented our findings together." },
+      { heading: "The proposal", list: [
+        "Central question: how do Canadian university students experience and manage work-life balance?",
+        "Sub-questions on the main challenges students face and the strategies that help them cope.",
+        "A phenomenological approach, because the goal was to understand the lived experience in students' own words.",
+        "In-depth interviews with 10–15 full-time undergraduates, following TCPS 2 ethics guidelines."
+      ] },
       { heading: "How I did it", list: [
         "Explained the purpose, got consent to record, and made clear they could skip questions or stop at any time.",
         "Used open questions and follow-up probes to go from their typical week to a specific stressful time.",
@@ -367,7 +425,8 @@ window.PROJECTS = [
         "Physical activity as the most helpful way to cope, while breaks felt like they added stress.",
         "Advice for others: be realistic about how much you take on."
       ] },
-      { heading: "What I took away", text: "How much good follow-up questions matter, and how to handle consent and confidentiality in real research." }
+      { heading: "Presenting the findings", text: "We showed a typical week as a comic strip (gym at 6 a.m., classes, a late shift, assignments at 3 a.m.) to make the trade-offs visible. We then suggested strategies: protecting sleep, academic flexibility, financial support and accessible wellness services. Finally, we proposed future research on burnout over a semester, social support and school policies." },
+      { heading: "What I took away", text: "How much good follow-up questions matter, how to handle consent and confidentiality in real research, and how to turn interview data into something an audience can feel." }
     ]
   },
   {
@@ -399,19 +458,25 @@ window.PROJECTS = [
   },
   {
     id: "gis-postal-codes-greenspace",
-    title: "GIS lab: postal codes, distances and greenspace buffers",
+    title: "GIS assignments: green space, postal codes and buffers",
     course: "HLSC 3Q90",
     courseName: null,
     term: "Fall 2025",
-    type: "GIS assignment",
+    type: "GIS assignments",
     format: "Solo",
     area: "Research",
-    summary: "Mapped postal code locations across Toronto, measured distances and used buffers to compare access to greenspace.",
-    tools: ["ArcGIS Pro", "Buffers", "Forward sortation areas"],
+    summary: "Framed a research question on green space and heart disease, then mapped postal codes and used buffers to compare access to parks.",
+    tools: ["ArcGIS Pro", "Buffers", "Open data"],
     pdf: "files/gis-postal-codes-greenspace.pdf",
     sections: [
-      { heading: "Overview", text: "A hands-on GIS assignment working with point data for Toronto postal codes, and thinking about how the size of a buffer changes what counts as someone's 'neighbourhood'." },
-      { heading: "What I did", list: [
+      { heading: "Overview", text: "Two hands-on assignments. The first asked me to frame a health geography research question. The second (the PDF) worked with point data for Toronto postal codes, and with how the size of a buffer changes what counts as someone's 'neighbourhood'." },
+      { heading: "Assignment 1: the research question", list: [
+        "Question: is living closer to green space linked to lower rates of cardiovascular disease among Toronto adults aged 45 and older?",
+        "Evidence: cohort studies link nearby green space to fewer cardiovascular deaths, but most were done in Europe or the US, not in large Canadian cities.",
+        "Data I'd use: the City of Toronto parks shapefile and Public Health Ontario chronic disease mortality data.",
+        "Also mapped changes in infant mortality across Europe from 1960 to 2020."
+      ] },
+      { heading: "Assignment 2: what I did", list: [
         "Mapped 416 postal codes and found that most locations clustered in East York around Danforth Avenue.",
         "Counted 312 locations inside the M4C forward sortation area.",
         "Measured the distance from a postal code to a target location (about 2.97 km).",
@@ -429,19 +494,288 @@ window.PROJECTS = [
     type: "Argumentative essay",
     format: "Solo",
     area: "Writing & reflection",
-    summary: "An argumentative essay making the research-backed case that gaming in moderation builds mental, social and practical skills.",
+    summary: "A term-long argument, from outline to final paper, that gaming in moderation builds mental, social and emotional skills.",
     tools: ["Thesis & outline", "APA style", "Literature"],
     pdf: "files/video-games-benefits-essay.pdf",
     sections: [
-      { heading: "Thesis", text: "Gaming isn't a harmful distraction when it's done responsibly. In moderation, it improves mental skills, supports emotional wellbeing and builds social connection through teamwork and communication." },
+      { heading: "Thesis", text: "Gaming isn't a harmful distraction. Played in moderation, it supports learning, thinking skills, social life, emotional health and stress relief." },
       { heading: "The argument", list: [
-        "Cognitive benefits: action and puzzle games train attention, memory, problem-solving and fast decision-making (Bediou et al., 2018).",
-        "Social benefits: multiplayer games like Fortnite and Minecraft build teamwork and real friendships and can reduce loneliness (Cole & Griffiths, 2007).",
-        "Learning: gamification and tools like Minecraft Education make learning more engaging (Connolly et al., 2012).",
-        "Myths: the problem is excessive play, not gaming itself (Granic et al., 2014)."
+        "Thinking skills: action games train attention and spatial awareness, and strategy and puzzle games build planning and pattern-finding (Bediou et al., 2018).",
+        "Connection: online games work like community spaces where real friendships form, especially for people who find in-person socialising hard (Cole & Griffiths, 2007).",
+        "Stress relief: the focused 'flow' state in commercial games can lower stress and lift mood (Pallavicini et al., 2021).",
+        "Resilience: failing and retrying teaches a growth mindset (Granic et al., 2014).",
+        "Learning: clear goals and fast feedback make games and gamification strong teaching tools (Connolly et al., 2012).",
+        "Myths: the problem is excessive play, not gaming itself."
       ] },
-      { heading: "How I built it", text: "I started with a thesis statement and a section-by-section outline with a source for each point, then turned that into the full essay." },
+      { heading: "How I built it", text: "It was built in three steps across the term: a thesis statement and outline, a short essay (the PDF here), and a longer final paper that added sections on stress relief and resilience." },
       { heading: "What I took away", text: "Writing about something I actually care about made it easier to practise structuring an argument and backing each claim with evidence." }
+    ]
+  },
+  {
+    id: "biostatistics-ii-r-analyses",
+    title: "Biostatistics II: ANOVA and regression in R",
+    course: "HLSC 3P07",
+    courseName: "Biostatistics II",
+    term: "Summer 2025",
+    type: "Data analysis assignments",
+    format: "Solo",
+    area: "Research",
+    summary: "Hypothesis testing with real health datasets in R: two-way ANOVA, regression and logistic regression.",
+    tools: ["R / RStudio", "Two-way ANOVA", "Logistic regression", "NHANES"],
+    pdf: null,
+    privateNote: "Summary only. The assignments aren't posted.",
+    sections: [
+      { heading: "Overview", text: "A set of applied statistics assignments where each analysis started with a hypothesis, checked the test's assumptions and ended with a plain-language conclusion." },
+      { heading: "Examples", list: [
+        "Two-way ANOVA on sleep: restlessness had a significant effect on sleep hours (p = 0.017), while concentration level and the interaction didn't. I also flagged that the equal-variance and normality assumptions were shaky.",
+        "Logistic regression on bronchopulmonary dysplasia (BPD) in newborns: after adjusting for gestational age, each extra gram of birthweight lowered the odds of BPD (OR 0.997, p < 0.001). Predicted risk fell from about 75% at 700 g to 4% at 1,700 g.",
+        "Lab work on linear regression, ANCOVA and logistic models, plus a group analysis of alcohol use in the NHANES survey."
+      ] },
+      { heading: "What I took away", text: "How to go from a raw dataset to a defensible conclusion in R, and why checking assumptions matters as much as the p-value." }
+    ]
+  },
+  {
+    id: "teamwork-healthcare-reflection",
+    title: "Teamwork as the heart of healthcare",
+    course: "HLSC 3P94",
+    courseName: null,
+    term: "Summer 2025",
+    type: "Reflection essay",
+    format: "Solo",
+    area: "Writing & reflection",
+    summary: "A reflection on what makes healthcare teams work, tied to what I saw volunteering in a clinic and to a possible path into health administration.",
+    tools: ["Team typologies", "Strategic planning"],
+    pdf: null,
+    privateNote: "Summary only. The full reflection isn't posted.",
+    sections: [
+      { heading: "Overview", text: "Before this course I thought teamwork just meant people working side by side. This reflection is about how that changed, using Mach et al. (2021) on team types and the course material on interdependence, strategic planning and motivation." },
+      { heading: "Key ideas", list: [
+        "Teams range from loosely 'remote-controlled' groups to fully interdependent ones like surgical teams, and the type has to fit the task.",
+        "Interdependence is powerful but costly when roles overlap or communication breaks down.",
+        "Teams are how new systems and policies actually stick in a hospital."
+      ] },
+      { heading: "A personal connection", text: "Volunteering at a clinic where roles barely communicated, I saw patients asked the same questions repeatedly, and a medication list mix-up between a nurse and admin staff. That made the theory concrete, and it's why I'm interested in fixing problems like that in healthcare administration, including virtual teams supporting rural care." }
+    ]
+  },
+  {
+    id: "sunnybrook-leadership-gap-swot",
+    title: "Addressing the leadership gap at Sunnybrook",
+    course: "HLSC 3P94",
+    courseName: null,
+    term: "Summer 2025",
+    type: "Strategic analysis",
+    format: "Group",
+    area: "Health policy",
+    summary: "A SWOT analysis and strategy for filling the leadership gap left at Sunnybrook Health Sciences Centre after the pandemic.",
+    tools: ["SWOT analysis", "Strategic planning", "LEADS framework"],
+    pdf: null,
+    privateNote: "This was a group project with two classmates, so only a summary is shared.",
+    sections: [
+      { heading: "The problem", text: "Many experienced managers at Sunnybrook retired or left during COVID-19, leaving a shortage of seasoned leaders. At the same time, a younger, purpose-driven workforce was eager to grow into those roles." },
+      { heading: "SWOT highlights", list: [
+        "Strengths: in-house leadership programs, a University of Toronto affiliation, and over 10,000 staff to develop from.",
+        "Weaknesses: lost leaders, retention problems, tight public budgets and patchy succession planning.",
+        "Opportunities: partnerships with business schools, a motivated younger workforce, analytics, and post-pandemic funding.",
+        "Threats: burnout, competition for talent, and risks to patient care and stakeholder trust."
+      ] },
+      { heading: "Recommendations", list: [
+        "An organisation-wide succession planning strategy.",
+        "Expanded mentoring and coaching that pairs emerging leaders with experienced ones.",
+        "Executive education with the Rotman School of Management.",
+        "Performance dashboards to track leadership development."
+      ] }
+    ]
+  },
+  {
+    id: "prenatal-antibiotics-obesity-appraisal",
+    title: "Critical appraisal: prenatal antibiotics and childhood obesity",
+    course: "HLSC 2P27",
+    courseName: null,
+    term: "Winter 2025",
+    type: "Critical appraisal",
+    format: "Solo",
+    area: "Research",
+    summary: "A critical appraisal of a large cohort study linking antibiotic use in pregnancy to obesity in children.",
+    tools: ["Critical appraisal", "Cohort study design", "Bias"],
+    pdf: null,
+    privateNote: "Summary only. The full appraisal isn't posted.",
+    sections: [
+      { heading: "The study", text: "Wang et al. (2018) used the US Collaborative Perinatal Project (1959–1965), following about 46,000 women and their children, to test whether antibiotic use in pregnancy, especially repeated use or use in the second trimester, raised the risk of overweight or obesity at ages 4 and 7." },
+      { heading: "Strengths", list: [
+        "A clear, focused research question.",
+        "A very large sample, which reduces the chance of random results.",
+        "Exposure measured repeatedly across pregnancy."
+      ] },
+      { heading: "Weaknesses", list: [
+        "Data from the 1960s may not reflect today's antibiotics, healthcare or lifestyles.",
+        "Self-reported use brings a risk of recall and misclassification bias.",
+        "No detail on dose, duration or the reason for prescribing, so the infection itself could be driving the link.",
+        "Obesity was measured only at ages 4 and 7."
+      ] },
+      { heading: "My suggestions", text: "Use recent data and prescription records, record the type and severity of infection, compare antibiotic classes, and follow children into adolescence." }
+    ]
+  },
+  {
+    id: "obesity-surveillance-brief-ontario",
+    title: "Health surveillance brief: obesity among adults in Ontario",
+    course: null,
+    courseName: null,
+    term: "Winter 2025",
+    type: "Surveillance brief",
+    format: "Solo",
+    area: "Public health",
+    summary: "A descriptive epidemiology brief for clinicians on who is affected by obesity in Ontario, where, and how it's changed over time.",
+    tools: ["Descriptive epidemiology", "Person, place, time"],
+    pdf: null,
+    privateNote: "Summary only. The full brief isn't posted.",
+    sections: [
+      { heading: "Purpose", text: "To give physicians and nurses a clear picture of obesity trends among Ontario adults, using the person, place and time framework, to support prevention and treatment." },
+      { heading: "Person, place, time", list: [
+        "Person: highest prevalence among adults aged 45–64. It's higher in low-income neighbourhoods (about 40% vs 25%) and among some racialized groups.",
+        "Place: more walkable neighbourhoods have lower obesity rates. Areas with lots of fast food and few affordable healthy options have higher rates.",
+        "Time: rates rose from about 24% in 2010 to 31% in 2019, with projections reaching 38% by 2035."
+      ] },
+      { heading: "Recommendations for clinicians", text: "Measure BMI routinely, use non-stigmatising language (weight stigma keeps people from seeking care), and advocate for walkable neighbourhoods and low-cost recreation in low-income areas." }
+    ]
+  },
+  {
+    id: "covid-omicron-video-analysis",
+    title: "Critical analysis: Canada's Omicron response video",
+    course: null,
+    courseName: null,
+    term: "Winter 2025",
+    type: "Critical media analysis",
+    format: "Solo",
+    area: "Health policy",
+    summary: "A critique of how a federal health minister communicated Canada's Omicron travel and booster policies.",
+    tools: ["Health communication", "Source evaluation"],
+    pdf: null,
+    privateNote: "Summary only. The full analysis isn't posted.",
+    sections: [
+      { heading: "The video", text: "A CBC News interview with then-Health Minister Jean-Yves Duclos on Canada's response to the Omicron variant: travel bans, stricter airport testing, and boosters." },
+      { heading: "What I assessed", list: [
+        "Clarity: calm and professional, but with jargon like 'genomic sequencing' and no visuals, even though visuals improve health literacy.",
+        "Credibility: a reliable official source, but government messaging can present its own actions favourably.",
+        "Accuracy: mostly correct, but the claim that travel bans were purely evidence-based conflicted with WHO's warnings against them.",
+        "Context: compared with travel bans during H1N1 and the 2014 Ebola outbreak, which hurt affected countries without stopping spread."
+      ] },
+      { heading: "What I took away", text: "Clear, honest communication matters because it's what gets people to follow public health guidance, and including independent experts would have made this message stronger." }
+    ]
+  },
+  {
+    id: "health-equity-reflective-portfolio",
+    title: "Health equity and justice: a reflective portfolio",
+    course: "HLSC 2P21",
+    courseName: null,
+    term: "Fall 2024",
+    type: "Reflective portfolio + lesson plan",
+    format: "Solo",
+    area: "Public health",
+    summary: "A final portfolio reflecting on racism, colonization and Medicare in Canadian health, plus a 90-minute lesson plan on Indigenous health equity.",
+    tools: ["Social determinants of health", "Cultural safety", "Lesson design"],
+    pdf: null,
+    privateNote: "Summary only. The full portfolio isn't posted.",
+    sections: [
+      { heading: "Overview", text: "The final portfolio for a course on health equity and justice. It brings together three critical thinking assignments (art as advocacy, the legacy of residential schools, and the creation of Medicare) and shows how they connect." },
+      { heading: "What it covers", list: [
+        "Racism as a health threat, from patients' pain being dismissed to the case of Yosif Al-Hasnawi, a Brock student whose death could have been prevented.",
+        "How colonization and residential schools still shape First Nations, Métis and Inuit health, including the lack of clean water in many communities.",
+        "Canada's biggest healthcare challenges, wait times and unequal access, with solutions like preventive care, telehealth and investing in housing and education."
+      ] },
+      { heading: "The lesson plan", text: "'Indigenous Health and the Path to Equity': a 90-minute lesson with a short video, a talk on historical trauma and cultural safety, group case discussions and a role-play where students design a culturally safe healthcare plan with a community." },
+      { heading: "What I took away", text: "Health equity isn't just about policies. It's about people, and it takes both systemic change and personal accountability." }
+    ]
+  },
+  {
+    id: "unemployment-health-job-fair-observation",
+    title: "Unemployment and health: a job fair observation",
+    course: "HLSC 2P21",
+    courseName: null,
+    term: "Fall 2024",
+    type: "Field observation",
+    format: "Solo",
+    area: "Public health",
+    summary: "Observed a crowded local job fair and talked with job seekers to see the social determinants of health up close.",
+    tools: ["Field observation", "Social determinants of health"],
+    pdf: null,
+    privateNote: "Summary only. The full write-up isn't posted to protect the people I spoke with.",
+    sections: [
+      { heading: "What I observed", text: "A job fair at the Pen Centre in St. Catharines drew people of every age. The lines for retail interviews were far longer than for fast food, and older job seekers mostly went to retail. A few people agreed to talk about how being out of work was affecting them." },
+      { heading: "Connecting it to the theory", list: [
+        "Employment and income showed up clearly as social determinants, affecting food, stress and mental health.",
+        "Many people were searching alone, without a support network, which likely added to their anxiety.",
+        "It also challenged the framework: age and immigration status shaped people's experience beyond income alone."
+      ] },
+      { heading: "What I took away", text: "How much I empathise with people facing job insecurity, plus practice in observation and in connecting what I see to a framework." }
+    ]
+  },
+  {
+    id: "sleep-behaviour-change-reflection",
+    title: "A better sleep, a better me",
+    course: "HLSC 2P49",
+    courseName: null,
+    term: "Fall 2024",
+    type: "Behaviour change project",
+    format: "Solo",
+    area: "Writing & reflection",
+    summary: "A term-long personal behaviour change project on fixing my sleep schedule, analysed through health behaviour theory.",
+    tools: ["Self-efficacy", "Transtheoretical Model", "Habit stacking"],
+    pdf: null,
+    privateNote: "Summary only. The full reflection isn't posted.",
+    sections: [
+      { heading: "Overview", text: "For HLSC 2P49 I changed one real health behaviour for the term, sleeping earlier and cutting screen time before bed, then reflected on it using course theory." },
+      { heading: "What helped", list: [
+        "Self-efficacy: believing I could actually change was what kept me consistent.",
+        "Connecting the habit to bigger goals, like getting to school early and studying before class (Clear, 2018).",
+        "Changing my environment: putting my phone away before brushing my teeth, a form of habit stacking.",
+        "Comparing notes with a classmate, using the Transtheoretical Model and Social Cognitive Theory."
+      ] },
+      { heading: "What I took away", text: "Staying up late was partly a way of avoiding stress about unfinished work. Small, intentional changes added up to better energy, mood and productivity." }
+    ]
+  },
+  {
+    id: "west-nile-virus-immune-response",
+    title: "The immune response to West Nile virus",
+    course: null,
+    courseName: null,
+    term: "Fall 2024",
+    type: "Science paper",
+    format: "Solo",
+    area: "Public health",
+    summary: "How the body fights West Nile virus, how the virus evades it, and how the disease can be prevented and treated.",
+    tools: ["Immunology", "Infectious disease"],
+    pdf: null,
+    privateNote: "Summary only. The full paper isn't posted.",
+    sections: [
+      { heading: "Innate and adaptive defence", list: [
+        "Innate: physical barriers, macrophages and dendritic cells releasing cytokines, natural killer cells, type I interferons and the complement system.",
+        "Adaptive: B cells producing neutralising antibodies, cytotoxic T cells destroying infected cells, and immune memory."
+      ] },
+      { heading: "How the virus evades it", text: "By hiding inside cells, disrupting immune signalling, blocking apoptosis, manipulating the unfolded protein response, and crossing the blood-brain barrier, which can lead to encephalitis and meningitis." },
+      { heading: "Prevention and treatment", text: "Bite prevention and removing standing water where mosquitoes breed, supportive care for severe cases, and the state of vaccine research. There's still no human vaccine, though one exists for horses." }
+    ]
+  },
+  {
+    id: "dietary-analysis",
+    title: "Personal dietary analysis",
+    course: "HLSC 2P91",
+    courseName: null,
+    term: "Fall 2024",
+    type: "Nutrition analysis",
+    format: "Solo",
+    area: "Public health",
+    summary: "Tracked my own diet and compared it with Canadian nutrient recommendations, then built a plan to close the gaps.",
+    tools: ["Dietary Reference Intakes", "AMDR", "Diet tracking"],
+    pdf: null,
+    privateNote: "The full analysis isn't shared because it includes personal health details.",
+    sections: [
+      { heading: "Overview", text: "A nutrition assignment where I recorded my food intake, ran it through diet analysis software, and compared every macronutrient, vitamin and mineral with the recommended intakes." },
+      { heading: "What I looked at", list: [
+        "Calories from carbohydrate, fat and protein against the Acceptable Macronutrient Distribution Ranges.",
+        "Fibre, sugar, omega-3 and saturated fat, and why each matters.",
+        "Essential amino acids, vitamins (A, B, C, D, E) and minerals (calcium, magnesium, iron, zinc and more)."
+      ] },
+      { heading: "The plan", text: "A practical day of eating to fix the gaps I found, like more fibre, omega-3 from fish, calcium and vitamin D, and less sugar and saturated fat. A related exercise worked out how much of one food you'd need to eat to meet Health Canada's omega-3 recommendation." }
     ]
   }
 ];

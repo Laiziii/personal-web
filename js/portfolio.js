@@ -123,7 +123,7 @@
     const aside = el("aside", "project-aside reveal");
     aside.setAttribute("aria-label", "Project details");
     const dl = el("dl", "project-facts");
-    [["Course", p.course], ["Term", p.term], ["Type", p.type], ["Format", p.format === "Group" ? "Group project" : "Individual"], ["Area", p.area]]
+    [["Course", p.course], ["Term", p.term], ["Type", p.type], ["Format", { Solo: "Individual", Group: "Group project" }[p.format] || p.format], ["Area", p.area]]
       .filter(function (row) { return row[1]; })
       .forEach(function (row) {
         const div = el("div");
