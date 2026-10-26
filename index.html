@@ -319,7 +319,7 @@
         <header class="section-head reveal">
           <span class="section-num">03</span>
           <h2 class="section-title" id="projects-title">Projects</h2>
-          <p class="section-sub">A mix of academic work and things I&rsquo;ve built. More to come.</p>
+          <p class="section-sub">Coursework I&rsquo;m proud of, plus things I&rsquo;ve built. Open any project for a summary, and a PDF where I can share one.</p>
         </header>
 
         <div class="projects reveal">
@@ -337,49 +337,19 @@
               <li>HTML</li><li>CSS</li><li>JavaScript</li><li>AI-assisted</li>
             </ul>
           </article>
+        </div>
 
-          <article class="project">
-            <div class="project-top">
-              <span class="project-type mono">Academic &middot; Research proposal</span>
+        <!-- Academic portfolio: cards are built by js/portfolio.js from js/projects.js -->
+        <div class="portfolio">
+          <div class="portfolio-head reveal">
+            <div>
+              <p class="card-kicker mono">Academic portfolio</p>
+              <h3 class="github-title">Brock coursework, 2025&ndash;2026</h3>
             </div>
-            <h3 class="project-title">Physical activity &amp; type 2 diabetes</h3>
-            <p>
-              A proposal asking whether Ontario adults aged 40&ndash;64 with prediabetes who get less than
-              150 minutes of physical activity a week have a higher five-year incidence of type 2 diabetes
-              than those who meet the guideline.
-            </p>
-            <ul class="tags">
-              <li>Epidemiology</li><li>Research design</li><li>Prevention</li>
-            </ul>
-          </article>
-
-          <article class="project">
-            <div class="project-top">
-              <span class="project-type mono">Academic &middot; GIS</span>
-            </div>
-            <h3 class="project-title">Mapping crime patterns in Toronto</h3>
-            <p>
-              A geographic information systems project looking at how location-based data can help
-              explain where crime happens and what that says about the social issues behind it.
-            </p>
-            <ul class="tags">
-              <li>GIS</li><li>Spatial data</li><li>Social issues</li>
-            </ul>
-          </article>
-
-          <article class="project">
-            <div class="project-top">
-              <span class="project-type mono">Academic &middot; Coursework</span>
-            </div>
-            <h3 class="project-title">Community education &amp; digital culture</h3>
-            <p>
-              Coursework on adult education, community outreach, digital media, popular culture and
-              Indigenous knowledge, and how technology shapes the way people learn and express culture.
-            </p>
-            <ul class="tags">
-              <li>Education</li><li>Digital media</li><li>Community</li>
-            </ul>
-          </article>
+            <div class="chips" role="group" aria-label="Filter projects by area" data-portfolio-filters></div>
+          </div>
+          <ul class="work-grid" data-portfolio aria-live="polite"></ul>
+          <noscript><p class="github-empty">Turn on JavaScript to browse the project summaries.</p></noscript>
         </div>
 
         <!-- GitHub repos are loaded by js/main.js when a username is set in SITE_CONFIG -->
@@ -503,6 +473,8 @@
     </div>
   </footer>
 
+  <script src="js/projects.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -29,7 +29,10 @@ on GitHub so it shows up nicely.
 ## Editing
 
 - **Change colours:** edit the variables under `:root` (dark) and `:root[data-theme="light"]` in `css/styles.css`.
-- **Add a project:** copy an `<article class="project">` block in the Projects section of `index.html`.
+- **Add a portfolio project:** copy an entry in `js/projects.js`. It shows up as a card on the
+  home page and gets its own page at `project.html?id=<its id>`. To offer a download, put the PDF in
+  `files/` and set `pdf: "files/name.pdf"`; otherwise set `pdf: null` and write a `privateNote`.
+  Only post PDFs of work you did on your own, with no student number or other private details.
 - **Add an interest:** copy a `<details class="index-item">` block and renumber.
 - **Hero rotating words:** edit `data-words` on the `.rotator-word` element (separate with `|`).
 
